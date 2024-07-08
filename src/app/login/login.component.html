@@ -1,0 +1,28 @@
+<div class="container">
+    <form #usuarioLogin="ngForm">
+      <div class="login">
+        <input
+          type="email"
+          [(ngModel)]="login.email"
+          #email="ngModel"
+          [ngModelOptions]="{standalone: true}"
+          placeholder="Email"
+          [className]="status.email"
+        >
+
+        <input
+          type="password"
+          [(ngModel)]="login.senha"
+          #senha="ngModel"
+          [ngModelOptions]="{standalone: true}"
+          placeholder="Senha"
+          [className]="status.senha"
+        >
+      <span (click)="recuperarSenha()">Esqueci a minha senha</span>
+
+      </div>
+      <div class="box-button">
+        <button type="button" class="entrar" (click)="entrar()">Entrar</button>
+      </div>
+    </form>
+  </div>

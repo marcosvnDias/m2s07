@@ -1,0 +1,18 @@
+<div class="container">
+    <form [formGroup]="formCadastro" (ngSubmit)="cadastrar()">
+        <div class="cadastro">
+          <input type="text" formControlName="nome" placeholder="Nome Completo " [className]="status.nome">
+          <input type="text" formControlName="cpf" placeholder="CPF" [className]="status.cpf">
+          <input type="email" formControlName="email" placeholder="Email" [className]="status.email">
+          <input type="text" formControlName="celular" placeholder="Celular" [className]="status.celular">
+          <select formControlName="curso">
+            <option value="front-end">Front-end</option>
+            <option value="back-end">Back-end</option>
+            <option value="fullStack">FullStack</option>
+          </select>
+        </div>
+        <div class="box-button">
+          <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+</div>

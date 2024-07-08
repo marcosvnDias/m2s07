@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="box-disciplinas" *ngFor="let curso of disciplinasAluno">
+        <p class="nome-aluno">{{curso.nomeAluno}}</p>
+        <p>Nome do Curso: {{curso.nome}}</p>
+        
+        <p>Primeiro semestre: {{curso.semestre1.materia1}} - {{curso.semestre1.materia2}}</p>
+        <!-- <p>Primeiro semestre: {{curso.semestre1.materia2}}</p> -->
+
+        <p>Segundo semestre: {{curso.semestre2.materia1}} - {{curso.semestre2.materia2}}</p>
+        <!-- <p>Segundo semestre: {{curso.semestre2.materia2}}</p> -->
+
+        <p>Terceiro semestre: {{curso.semestre3.materia1}} - {{curso.semestre3.materia2}}</p>
+        <!-- <p>Terceiro semestre: {{curso.semestre3.materia2}}</p> -->
+    </div>
+</div>
